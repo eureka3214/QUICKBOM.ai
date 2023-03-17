@@ -6,12 +6,12 @@ import os
 openai.api_key =  os.getenv("APIKEY")
 # openai.api_key = "YOUR_API_KEY"
 
-st.title("GPT-3 Text Generation")
+st.title("QuickBOM.ai")
 
 prompt = st.text_input("Enter a prompt:")
 if prompt:
     response = openai.Completion.create(
-        engine="davinci",
+        model="gpt-4",
         prompt=prompt,
         max_tokens=100,
         n=1,
