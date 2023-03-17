@@ -4,7 +4,7 @@ import os
 
 
 openai.api_key =  os.getenv("APIKEY")
-# openai.api_key = "YOUR_API_KEY"
+
 
 st.title("QuickBOM.ai")
 
