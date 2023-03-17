@@ -11,7 +11,7 @@ st.title("QuickBOM.ai")
 prompt = st.text_input("Enter a prompt:")
 if prompt:
     response = openai.Completion.create(
-        model="gpt-4",
+        model="text-davinci-003",
         prompt=prompt,
         max_tokens=100,
         n=1,
